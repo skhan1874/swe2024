@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a Post</title>
+    <link rel="stylesheet" type="text/css" href="form_proc.css">
+</head>
+<body>
+    <h1 class="heading">Create a Post</h1>
+    <form name="info" action="post.php" method="post">
+        <table>
+            <tr>
+                <td>Post Title</td>
+                <td><input type="text" name="ptitle"></td> 
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea name="comments" rows="5" cols="35"></textarea></td>
+            </tr>
+            <tr>
+                <td>Emotions</td>
+                <td>
+                    <select name="emotions" id="emotions">
+                        <option value="Sad Day">Sad Day</option>
+                        <option value="Happy Day">Happy Day</option>
+                        <option value="Normal Day">Normal Day</option>
+                        <option value="Crazy Day">Crazy Day</option>
+                        <option value="Special Day">Special Day</option>
+                        <option value="Lazy Day">Lazy Day</option>
+                    </select>
+                </td>
+            </tr>
+            <tr> 
+                <td>Tags</td>
+                <td><input type="text" name="tags"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit form"></td>  
+            </tr>
+            <tr> 
+                <td colspan="2"><input type="reset" value="Reset form"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
