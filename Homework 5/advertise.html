@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>My Advertisement and Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="Advertisement">
+    <p>I am advertising my favorite hobby of watching movies. 
+    I have always been interested in the process of movie making and what it can do to a human. 
+    I usually watch a new movie every week, typically on the weekends. 
+    I will now tell you two positive aspects of my hobby.
+    <span class="span1">Watching movies provides you with an escape from your life.</span>
+    <span class="span2">It also helps you learn something new depending on the type of movie you watch.</span>
+    </p>
+     <form id="contactForm" action="showinfo.php" method="POST">
+    Username: <input type="text" name="Username" id="Username"> <br><br>
+    Street Address: <input type="text" name="Street" id="Street"> <br><br>
+    City of residence: <input type="text" name="City" id="City"> <br><br>
+    State of residence: <input type="text" name="State" id="State"> <br><br>
+    Email Address: <input type="text" name="Email" id="Email"> <br><br> 
+    Phone Number: <input type="text" name="Phone" id="Phone"> <br><br>  
+    <input type="submit" value="Submit" id = "submit" onclick= "advertiseSubmit()"> 
+    <input type="reset" value="Reset" id = "reset">
+  </form>
+  </div>
+<script type = "text/javascript"  src = "advertise.js" >
+    </script>
+</body>
+</html>
